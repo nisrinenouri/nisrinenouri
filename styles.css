@@ -8,6 +8,47 @@
   --max:1180px;
   color-scheme:dark
 }
+/* Clear overview and a dedicated results journey. */
+.header nav a[aria-current="page"] { color:var(--accent); }
+.hero-detail { max-width:650px; color:var(--muted); font-size:15px; }
+.overview-note p { font-size:14px; line-height:1.9; }
+.strength-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:36px 32px; }
+.strength-grid article { border-top:1px solid var(--line); padding-top:24px; }
+.strength-grid h3 { font-size:23px; line-height:1.25; margin:16px 0; }
+.strength-grid p { color:var(--muted); font-size:14px; margin:0; }
+.results-bridge { display:flex; align-items:center; justify-content:space-between; gap:48px; padding:65px 0; border-block:1px solid var(--line); }
+.results-bridge p:last-child { color:var(--muted); max-width:620px; margin:24px 0 0; }
+.results-bridge .button { flex-shrink:0; }
+.contact-copy { color:var(--muted); margin:25px 0; }
+.results-intro { padding:80px 0 55px; }
+.results-intro .intro { max-width:760px; margin-top:30px; }
+.results-note,.project-context { color:var(--muted); font-size:13px; }
+.result-jumps { display:flex; flex-wrap:wrap; gap:12px; margin-top:32px; }
+.result-jumps a { border:1px solid var(--line); border-radius:30px; padding:9px 17px; font-size:13px; }
+.results-project { padding:65px 0; border-top:1px solid var(--line); }
+.result-summary { display:grid; grid-template-columns:1fr 1fr; gap:48px; margin:32px 0; }
+.result-summary h3 { font-size:20px; margin-bottom:13px; }
+.result-summary p { color:var(--muted); font-size:15px; }
+.result-summary strong { color:var(--text); font-weight:500; }
+.supporting-work { display:grid; gap:16px; padding-top:35px; }
+.supporting-work h3 { font-size:21px; margin-bottom:5px; }
+.supporting-work a { color:var(--muted); text-decoration:underline; text-underline-offset:5px; }
+.supporting-work a:hover { color:var(--accent); }
+.results-contact { border-top:1px solid var(--line); padding:65px 0 85px; }
+.results-contact h2 { margin-bottom:30px; }
+.results-contact .text-link { display:inline-block; margin:20px; }
+@media(max-width:860px) {
+  .strength-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .overview-hero .overview-note { display:none; }
+  .results-bridge { align-items:flex-start; flex-direction:column; gap:28px; }
+}
+@media(max-width:560px) {
+  .strength-grid,.result-summary { grid-template-columns:1fr; gap:28px; }
+  .results-intro { padding:45px 0; }
+  .results-intro h1 { font-size:2.9rem; }
+  .results-project { padding:45px 0; }
+  .results-contact .text-link { margin-left:0; }
+}
 * {
   box-sizing:border-box
 }

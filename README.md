@@ -9,13 +9,14 @@ Run `python -m http.server 4173 --bind 127.0.0.1` from this directory and open h
 ## Structure
 
 - `index.html`: professional overview, work, expertise, tools, and contact.
+- `results.html`: selected outcomes and evidence, with links to the full projects.
 - `work/`: self-contained case studies.
 - `styles.css`: shared responsive styles.
 - `sitemap.xml`: canonical public pages.
 
 ## Content maintenance
 
-Duplicate a case page, update its title, description, canonical, Open Graph metadata, JSON-LD, and next-case link. Add the page to the homepage and sitemap. Keep relative asset links compatible with the GitHub Pages project subdirectory.
+Duplicate a case page, update its title, description, canonical, Open Graph metadata, JSON-LD, and next-case link. Link the page from the Results page and add it to the sitemap. Keep task counts out of headline results; distinguish delivery scope from performance. Keep relative asset links compatible with the GitHub Pages project subdirectory.
 
 ## Confidentiality
 
