@@ -8,7 +8,7 @@ Run `python -m http.server 4173 --bind 127.0.0.1` from this directory and open h
 
 ## Structure
 
-- `index.html`: professional overview, work, expertise, tools, and contact.
+- `index.html`: professional overview, three featured results, expertise, tools, and contact.
 - `results.html`: selected outcomes and evidence, with links to the full projects.
 - `work/`: self-contained case studies.
 - `styles.css`: shared responsive styles.
@@ -20,7 +20,7 @@ Duplicate a case page, update its title, description, canonical, Open Graph meta
 
 ## Confidentiality
 
-Only sanitized editorial content belongs in this repository. Do not add source reports, screenshots, client identifiers, proprietary scores or formulas, or private review notes, including in comments, filenames, metadata, or Git history. Evidence panels are labelled reconstructions, not original product screenshots. Retain role and measurement limitations when editing.
+Only approved editorial content belongs in the published repository. Do not add source reports, screenshots, client identifiers, proprietary formulas or scoring weights, or private review notes, including in comments, filenames, metadata, or Git history. Exact metrics and market-level score changes require owner confidentiality approval before pushing or publishing. Retain role and measurement limitations when editing. Present results as text and tables; do not create artificial evidence or dashboard reconstructions.
 
 ## Publication
 

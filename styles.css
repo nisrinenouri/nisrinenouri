@@ -9,6 +9,33 @@
   color-scheme:dark
 }
 /* Clear overview and a dedicated results journey. */
+.sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+.tools-table { width:100%; border-collapse:collapse; text-align:left; font-size:14px; }
+.tools-table th,.tools-table td { padding:18px 0; border-bottom:1px solid var(--line); vertical-align:top; }
+.tools-table th { width:230px; padding-right:28px; font-size:11px; letter-spacing:.04em; font-weight:500; }
+.tools-table td { color:var(--muted); line-height:1.9; }
+@media(max-width:560px) { .tools-table th { width:105px; padding-right:15px; font-size:10px; } .tools-table td { font-size:12px; } }
+.featured-results-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+.featured-result { display:flex; flex-direction:column; border:1px solid var(--line); border-radius:6px; padding:28px; }
+.featured-result .featured-value { color:var(--accent); font-size:clamp(38px,4vw,58px); letter-spacing:-.05em; line-height:1.15; margin:25px 0 12px; }
+.featured-result h3 { font-size:23px; line-height:1.2; margin-bottom:20px; }
+.featured-result p { color:var(--muted); font-size:14px; }
+.featured-result .measurement-note { font-size:12px; padding-top:18px; border-top:1px solid var(--line); }
+.featured-result .text-link { margin-top:auto; }
+.tool-grid .tool-category { font-size:15px; line-height:1.5; letter-spacing:.03em; }
+.tool-list { list-style:none; padding:0; margin:20px 0 0; color:var(--muted); font-size:14px; line-height:1.9; }
+.featured-project-title { max-width:920px; font-size:clamp(30px,4vw,50px); }
+.metric-table-wrap { overflow-x:auto; margin:25px 0; }
+.case-section>div { min-width:0; }
+.metric-table { width:100%; border-collapse:collapse; font-size:14px; text-align:left; }
+.metric-table caption { text-align:left; color:var(--muted); font-size:12px; margin-bottom:14px; }
+.metric-table th,.metric-table td { padding:14px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+.metric-table th { font-weight:500; }
+.metric-table thead { color:var(--accent); }
+.metric-table tbody td { color:var(--muted); }
+@media(max-width:560px) { .metric-table { font-size:12px; } .metric-table th,.metric-table td { padding:12px 6px; overflow-wrap:anywhere; } }
+@media(max-width:1000px) { .featured-result { padding:22px; } }
+@media(max-width:760px) { .featured-results-grid { grid-template-columns:1fr; } .featured-result .featured-value { font-size:48px; } }
 .header nav a[aria-current="page"] { color:var(--accent); }
 .hero-detail { max-width:650px; color:var(--muted); font-size:15px; }
 .overview-note p { font-size:14px; line-height:1.9; }
